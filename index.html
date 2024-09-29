@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpleGroovebox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="sequencer-container">
+            <div id="step-indicators"></div>
+            <div id="drum-sequencer"></div>
+            <div id="melody-sequencer"></div>
+        </div>
+        <div class="controls">
+            <div class="left-controls">
+                <button id="startStop" title="Play/Stop">
+                    <img id="playIcon" src="play.svg" alt="Play">
+                    <img id="stopIcon" src="stop.svg" alt="Stop" style="display: none;">
+                </button>
+            </div>
+            <div class="right-controls">
+                <div class="knob" title="Adjust tempo">
+                    <input type="range" id="tempo" min="60" max="200" value="120">
+                </div>
+                <button id="waveform" title="Change waveform">
+                    <img src="sine.svg" alt="Waveform">
+                </button>
+                <button id="random" title="Randomize pattern">
+                    <img src="random.svg" alt="Random">
+                </button>
+                <button id="record" title="Record sequence">
+                    <img src="record.svg" alt="Record">
+                </button>
+                <button id="clear" title="Clear pattern">
+                    <img src="clear.svg" alt="Clear">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
